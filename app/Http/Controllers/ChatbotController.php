@@ -51,7 +51,8 @@ class ChatbotController extends Controller
             'headers' => [
                 'Content-Type' => 'application/json',
                 'api-key' =>  config('services.openai.api_key')
-            ]
+            ],
+            'verify' => false,
         ]);
 
         // Get the response body and decode it from JSON
